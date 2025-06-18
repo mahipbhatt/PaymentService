@@ -22,7 +22,6 @@ public class PaymentController {
 
     /**
      * Constructor-based dependency injection for {@link PaymentService}.
-     *
      */
     @Autowired
     public PaymentController(PaymentService paymentService) {

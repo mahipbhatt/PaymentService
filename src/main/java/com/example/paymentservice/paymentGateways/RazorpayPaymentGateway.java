@@ -1,6 +1,8 @@
 package com.example.paymentservice.paymentGateways;
 
-import com.razorpay.*;
+import com.razorpay.PaymentLink;
+import com.razorpay.RazorpayClient;
+import com.razorpay.RazorpayException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,10 +31,10 @@ public class RazorpayPaymentGateway implements PaymentGateway {
     /**
      * Generates a payment link for the given order details using Razorpay's API.
      *
-     * @param orderId the unique identifier for the order
-     * @param email the email address of the user
+     * @param orderId     the unique identifier for the order
+     * @param email       the email address of the user
      * @param phoneNumber the phone number of the user
-     * @param amount the amount to be paid, in the smallest currency unit (e.g., paise)
+     * @param amount      the amount to be paid, in the smallest currency unit (e.g., paise)
      * @return a payment link as a {@link String}
      * @throws RuntimeException if an error occurs while creating the payment link
      */

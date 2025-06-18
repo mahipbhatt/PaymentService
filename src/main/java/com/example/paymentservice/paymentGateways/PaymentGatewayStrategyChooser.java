@@ -19,7 +19,7 @@ public class PaymentGatewayStrategyChooser {
      * Constructor-based dependency injection for payment gateways.
      *
      * @param razorpayPaymentGateway the Razorpay payment gateway implementation
-     * @param stripePaymentGateway the Stripe payment gateway implementation
+     * @param stripePaymentGateway   the Stripe payment gateway implementation
      */
     @Autowired
     public PaymentGatewayStrategyChooser(RazorpayPaymentGateway razorpayPaymentGateway, StripePaymentGateway stripePaymentGateway) {
