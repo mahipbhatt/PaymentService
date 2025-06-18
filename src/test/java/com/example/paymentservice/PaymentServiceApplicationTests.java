@@ -19,5 +19,7 @@ class PaymentServiceApplicationTests {
      */
     // @Test
     void contextLoads() {
+        // This method is intentionally left empty.
+        // It serves as a placeholder to ensure that the application context loads without errors.
     }
 }
